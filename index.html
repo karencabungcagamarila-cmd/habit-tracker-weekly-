@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Pink Habit Tracker</title>
+    <link rel="stylesheet" href="updated3rd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="aesthetic-header-section">
+        <div class="header-content">
+            <h1>Weekly Exercise Habit Tracker</h1>
+            <p>Creating a habit tracker is an incredibly effective way to turn your goals into reality. By visually tracking your progress, you stay motivated and committed, as each box serves as a small victory that encourages you to keep going.</p>
+            <p>Track your daily exercises for the week. Check off each day you complete the habit. Progress and streak will update automatically. Streak counts consecutive days from Monday onwards.</p>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="weekly-dashboard-card">
+            <h2>Weekly Dashboard</h2>
+            
+            <div class="input-area">
+                <input type="text" id="newHabitInput" placeholder="Enter new exercise name">
+                <button id="addHabitBtn" class="add-button">+ Add Exercise</button>
+            </div>
+
+            <section id="habitsList">
+                
+                <div class="habit-item" data-habit-id="1">
+                    <div class="habit-info">
+                        
+                        <h3 class="habit-name">Drink 8 glass of water</h3>
+                        
+                        <div class="streak-counter">
+                            <span class="fire-emoji">🔥</span>
+                            <span class="streak-count">0</span>
+                        </div>
+
+                         <button class="remove-button delete-btn" aria-label="Delete habit">remove</button>
+                    </div>
+
+                    <div class="habit-tracking">
+                        <div class="day-buttons">
+                            <button class="day-btn" data-day="S">S</button>
+                            <button class="day-btn" data-day="M">M</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="W">W</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="F">F</button>
+                            <button class="day-btn" data-day="S">S</button>
+                        </div>
+                        
+                        <div class="progress-section">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 28%;"></div> 
+                            </div>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                    </div>
+                </div> <div class="habit-item" data-habit-id="2">
+                    <div class="habit-info">
+                        <h3 class="habit-name">walk at least 5000 steps</h3>
+                        <div class="streak-counter">
+                            <span class="fire-emoji">🔥</span>
+                            <span class="streak-count">0</span>
+                        </div>
+                        <button class="remove-button delete-btn" aria-label="Delete habit">remove</button>
+                    </div>
+                    <div class="habit-tracking">
+                        <div class="day-buttons">
+                            <button class="day-btn " data-day="S">S</button>
+                            <button class="day-btn " data-day="M">M</button>
+                            <button class="day-btn " data-day="T">T</button>
+                            <button class="day-btn " data-day="W">W</button>
+                            <button class="day-btn " data-day="T">T</button>
+                            <button class="day-btn" data-day="F">F</button>
+                            <button class="day-btn" data-day="S">S</button>
+                        </div>
+                        <div class="progress-section">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 71%;"></div>
+                            </div>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                    </div>
+                </div> <div class="habit-item" data-habit-id="3">
+                    <div class="habit-info">
+                        <h3 class="habit-name">10-Minute Stretch</h3>
+                        <div class="streak-counter">
+                            <span class="fire-emoji">🔥</span>
+                            <span class="streak-count">0</span>
+                        </div>
+                        <button class="remove-button delete-btn" aria-label="Delete habit">remove</button>
+                    </div>
+                    <div class="habit-tracking">
+                        <div class="day-buttons">
+                            <button class="day-btn" data-day="S">S</button>
+                            <button class="day-btn" data-day="M">M</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="W">W</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="F">F</button>
+                            <button class="day-btn" data-day="S">S</button>
+                        </div>
+                        <div class="progress-section">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 0%;"></div>
+                            </div>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                    </div>
+                </div> <div class="habit-item" data-habit-id="4">
+                    <div class="habit-info">
+                        <h3 class="habit-name">Yoga/Mobility</h3>
+                        <div class="streak-counter">
+                            <span class="fire-emoji">🔥</span>
+                            <span class="streak-count">0</span>
+                        </div>
+                        <button class="remove-button delete-btn" aria-label="Delete habit">remove</button>
+                    </div>
+                    <div class="habit-tracking">
+                        <div class="day-buttons">
+                            <button class="day-btn" data-day="S">S</button>
+                            <button class="day-btn" data-day="M">M</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="W">W</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="F">F</button>
+                            <button class="day-btn" data-day="S">S</button>
+                        </div>
+                        <div class="progress-section">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 0%;"></div>
+                            </div>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                    </div>
+                </div> <div class="habit-item" data-habit-id="5">
+                    <div class="habit-info">
+                        <h3 class="habit-name">exercise</h3>
+                        <div class="streak-counter">
+                            <span class="fire-emoji">🔥</span>
+                            <span class="streak-count">0</span>
+                        </div>
+                        <button class="remove-button delete-btn" aria-label="Delete habit">remove</button>
+                    </div>
+                    <div class="habit-tracking">
+                        <div class="day-buttons">
+                            <button class="day-btn" data-day="S">S</button>
+                            <button class="day-btn" data-day="M">M</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="W">W</button>
+                            <button class="day-btn" data-day="T">T</button>
+                            <button class="day-btn" data-day="F">F</button>
+                            <button class="day-btn" data-day="S">S</button>
+                        </div>
+                        <div class="progress-section">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 0%;"></div>
+                            </div>
+                            <span class="progress-percentage">0%</span>
+                        </div>
+                    </div>
+                </div> </section>
+        </div> </main>
+
+    <script src="updated3rd.js"></script>
+</body>
+</html>

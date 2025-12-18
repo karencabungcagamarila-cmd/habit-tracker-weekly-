@@ -1,0 +1,242 @@
+
+:root {
+    --color-background-soft: #FFEAF3; /*para sa weekly exercise habit tracker nga part*/
+    --color-primary-pink: #D93B78; /*para color sa words title nga word*/
+    --color-card-bg: #FFFFFF; /**/
+    --color-item-bg: #FFF6FA; /*pangcolor sa backgournd sa mga exercise*/
+    --color-success-pink: #ff69b4;/**/ 
+    --color-text-dark: #444444;/* pang blur sa words sa paragraph*/
+    --color-delete-red: #F44336;/*sa delete button*/
+}
+
+body {
+    font-family: 'Poppins', sans-serif;/*sa font sa paragraph*/ 
+    background-color: pink;/*pinaka background sa exercise na part*/
+    color: var(--color-text-dark);/**/
+    margin: 0;/**/
+    display: flex;/**/
+    flex-direction: column;/* paglinya sa mga table*/
+    align-items: center;/**/
+    min-height: 100vh;/**/
+
+}
+
+
+.aesthetic-header-section { /* header or the title*/
+    width: 100%; /**/
+    background-color: var(--color-background-soft);/*sa background sa upper part */
+    padding: 30px 20px;/**/
+    text-align: center;/**/
+}
+
+.header-content h1 { /**/
+    color: var(--color-primary-pink);/**/
+    font-size: 3.0em;/**/
+    font-weight: 700;/**/
+    margin-bottom: 15px;/**/
+}
+
+h1:hover {
+    color: #C02A60;
+    transform: scale(1.05);
+}
+
+.header-content p {
+    color: var(--color-text-dark);
+    max-width: 700px;
+    margin: 10px auto; /*asa siya gibutang*/
+    font-size: 1.0em;
+}
+
+p:hover {
+    color: #FF69B4;
+    transform: scale(1.05    );
+}
+
+
+.dashboard-container {/*table*/
+    padding: 20px;/**/
+    width: 800%;/*gilapdon sa gibutangan sa table sa exercise*/
+    max-width: 800px; /*pa expand/ padako ang lenght*/
+}
+
+
+.weekly-dashboard-card { /*sulod sa table*/
+    background: rgb(235, 227, 228);/*background sa table*/
+    border-radius: 15px;/*edge sa center nga part*/
+    padding: 30px;/**/
+    margin-top: 20px;
+}
+
+.weekly-dashboard-card h2 {/*ang sulat ngaweekly dashboard*/
+    text-align: center;
+    color: var(--color-primary-pink);/*color sa weekly dashboard*/
+    margin-bottom: 25px;/**/
+    font-weight: 1000;
+    font-size: 40px;
+}
+h2:hover {
+    color: #C02A60;
+    transform: scale(1.05);
+}
+
+.input-area {/*naay add button ug enter new exercise*/
+    display: flex;/*pagamay sa box sa add button*/
+    gap: 40px;/*distance sa duha ka button*/
+    margin-bottom: 30px;/*margin from enter new ex. to the exercise gyud*/
+}
+
+
+#newHabitInput {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #F0C4D6; 
+    border-radius: 8px; /*para sa edge sa enter new ex. button*/
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#newHabitInput:focus {
+    border-color: var(--color-primary-pink);
+}
+
+#newHabitInput:hover {
+    background-color:whitesmoke;
+    transform: scale(1.05); 
+}
+
+.add-button {
+    background-color: var(--color-primary-pink);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px; /*para talinis sa edge sa add button*/
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #C02A60;
+    transform: scale(1.05); 
+}
+
+.habit-item {
+    background-color: var(--color-item-bg); 
+    border-radius: 12px; /* para talinis sa kilid sa 5 exercise*/
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #FFEBF3;
+}
+
+.habit-item:hover {
+    background-color:whitesmoke;
+    transform: scale(1.05); 
+}
+
+.habit-info {/**/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.habit-name {/*name sa mga exercise*/
+    font-size: 1.15em;
+    color: brown; /*color sa text*/
+    margin: 0;
+    flex-grow: 1;
+}
+
+
+.delete-btn {/*delete button*/
+    background-color: var(--color-delete-red);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;/*pad sharp sa edge */
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.streak-counter {/*sa streak*/
+    background-color: #FFC0CB; /* Light pink badge */
+    color: var(--color-primary-pink);
+    padding: 4px 8px;
+    border-radius: 15px;/*para sharp*/
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.fire-emoji { 
+    margin-right: 3px;
+    font-size: 1.1em;
+}
+
+
+.habit-tracking { /*tracking or days*/
+    display: flex;
+    flex-direction: column;
+}
+
+.day-buttons { /*sa day buttons*/
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.day-btn {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid #FFC0CB;
+    background-color: white;
+    color: var(--color-primary-pink);
+    cursor: pointer;
+    border-radius: 50%; /*circle ni siya sa button*/
+    font-weight: 600;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.day-btn.done {
+    background-color: var(--color-success-pink); 
+    color: white;
+    border-color: var(--color-success-pink);
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.5); /* Soft glow */
+}
+
+
+.progress-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #FFC0CB; 
+    border-radius: 4px;/*pa sharp sa edge sa progress*/
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--color-primary-pink); 
+    transition: width 0.4s ease-in-out;
+}
+
+.progress-percentage {
+    font-weight: 600;
+    color: var(--color-primary-pink);
+    font-size: 0.9em;
+    width: 40px;
+    text-align: right;
+}
